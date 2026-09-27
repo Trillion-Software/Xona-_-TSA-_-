@@ -1,0 +1,65 @@
+/* XonaTSA — Connexion E-mail / Téléphone */
+
+#splash-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 150ms ease, visibility 150ms ease;
+}
+
+#splash-screen.splash-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#auth-screen {
+  min-height: 100vh;
+}
+
+.login-methods {
+  display: flex;
+  width: 100%;
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: 999px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.login-methods .method {
+  flex: 1;
+  border: 0;
+  border-radius: 999px;
+  padding: 14px 18px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease;
+}
+
+.login-methods .method.active {
+  background: #fff;
+  color: #000;
+}
+
+.phone-row {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.phone-row select {
+  width: 115px;
+  min-width: 115px;
+}
+
+.phone-row input {
+  flex: 1;
+  min-width: 0;
+}
+
+button:disabled {
+  opacity: .65;
+  cursor: wait;
+}

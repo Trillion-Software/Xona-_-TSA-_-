@@ -1,0 +1,51 @@
+<!-- XonaTSA — éléments HTML à intégrer dans la page auth -->
+
+<div class="login-methods">
+  <button type="button" id="emailTab" class="method active">
+    ✉️ E-mail
+  </button>
+
+  <button type="button" id="phoneTab" class="method">
+    📱 Téléphone
+  </button>
+</div>
+
+<div id="emailLogin">
+  <input
+    id="email"
+    type="email"
+    autocomplete="email"
+    placeholder="Adresse e-mail"
+  >
+</div>
+
+<div id="phoneLogin" hidden>
+  <div class="phone-row">
+    <select id="countryCode" aria-label="Indicatif">
+      <option value="+228">🇹🇬 +228</option>
+      <option value="+225">🇨🇮 +225</option>
+      <option value="+229">🇧🇯 +229</option>
+      <option value="+233">🇬🇭 +233</option>
+      <option value="+237">🇨🇲 +237</option>
+    </select>
+
+    <input
+      id="phone"
+      type="tel"
+      inputmode="numeric"
+      autocomplete="tel"
+      placeholder="Numéro de téléphone"
+    >
+  </div>
+</div>
+
+<input
+  id="password"
+  type="password"
+  autocomplete="current-password"
+  placeholder="Mot de passe"
+>
+
+<button type="button" id="loginButton">
+  Se connecter
+</button>
